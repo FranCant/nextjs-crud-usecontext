@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import { useTasks } from "../context/TaskContext";
-import { FcEmptyTrash } from "react-icons/Fc";
+import { AiOutlineClose } from "react-icons/Ai";
 import { useRouter } from "next/router";
 
 const Home = () => {
@@ -30,7 +30,7 @@ const Home = () => {
                       deleteTask(task.id);
 
                     }}>
-                      <FcEmptyTrash className="mr-2" />
+                      <AiOutlineClose className="mr-2" />
                       Delete
                     </button>
                   </div>
