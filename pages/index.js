@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import { useTasks } from "../context/TaskContext";
-import { VscTrash } from "react-icons/Vsc";
+import { FaTrashAlt } from "react-icons/Fa";
 import { useRouter } from "next/router";
 
 const Home = () => {
@@ -30,7 +30,7 @@ const Home = () => {
                       deleteTask(task.id);
 
                     }}>
-                      <VscTrash className="mr-2" />
+                      <FaTrashAlt className="mr-2" />
                       Delete
                     </button>
                   </div>
