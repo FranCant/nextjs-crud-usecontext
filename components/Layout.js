@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { AiOutlinePlus } from "react-icons/ai";
 import { useRouter } from "next/router";
 import { useTasks } from "../context/TaskContext";
 
@@ -23,7 +22,6 @@ const Layout = ({ children }) => {
             className="bg-green-500 hover:bg-green-400 text-white px-5 py-2 text-gray font-bold rounded-sm inline-flex items-center"
             onClick={() => router.push("/new")}
           >
-            <AiOutlinePlus className="mr-2" />
             Add Task
           </button>
         </div>
